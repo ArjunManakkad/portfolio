@@ -156,11 +156,7 @@
             self._toggledCategories = { };
             //Used for search feature
             self._typedText = $('input[data-search]').val() || '';
-            //Generate unique ID for resize events
-            self._uID = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-                var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
-                return v.toString(16);
-            });
+            
             //Set up Filterizr events
             self._setupEvents();
             //Set up standard Filterizr controls (for multiple Filterizrs in your scene, set to false)
